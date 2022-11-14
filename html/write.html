@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>제주로</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/write.css">
 </head>
 <body>
     <header>
@@ -20,7 +20,7 @@
                     <h1 class="d-none">메인메뉴</h1>
                     <ul>
                         <li>
-                            <a href="#">여행정보</a>
+                            <a href="main.html">여행정보</a>
                         </li>
                         <li>
                             <a href="notice.html">여행 게시판</a>
@@ -43,31 +43,25 @@
     </header>
 
     <main>
-        <section class="main-img-section">
-            <h1 class="main-title textShadowEffect">항 공 편</h1>
-            <div class="main-div">
-                <div class="main-search">
-                    <form action="">
-                        <select name="flight" id="flight">
-                            <option value="">왕복</option>
-                                <option value="one-way">편도</option>
-                              </optgroup>
-                        </select>
-                    </form>
-                    <div class="search-option">
-                        <input type="text" placeholder="출발지">
-                        <input type="text" placeholder="도착지">
-                        <input type="date">
-                        <input type="date">
-                        <button type="submit" >검색</button>
-                    </div>
-                </div>
+        <section class="write-title">
+            <h1>글 쓰기</h1>
+            <button><a href="">등록</a></button>
+        </section>
+        <section class="write-top">
+            <div>
+                <input type="text" placeholder="제목을 입력해 주세요.">
+                <input type="text" placeholder="출발지">
+                <input type="text" placeholder="도착지">
             </div>
         </section>
+        <section class="write-bottom">
+            <input type="text" placeholder="내용을 입력하세요.">
+        </section>
     </main>
-    
+
     <footer>
 
     </footer>
+    
 </body>
 </html>

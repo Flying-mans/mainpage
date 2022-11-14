@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>제주로</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/notice.css">
 </head>
 <body>
@@ -46,14 +47,23 @@
             <h1 class="main-title textShadowEffect">여행 게시판</h1>
             <div>
                 <input class="box-search" type="text">
-                <button class="btn-search boxShadowEffect" type="submit">검색</button>
+                <button class="btn-search boxShadowEffect" type="submit">
+                    <a href="">검색</a>
+                </button>
+            </div>
+            <div class="write">
+                <h1>
+                    <a href="write.html">글쓰기</a>
+                </h1>
             </div>
         </section>
         <section class="notice-section textShadowEffect">
             <div class="article-row-div">
                 <article>
-                    <h2>글제목</h2>
-                    <p>글내용</p>
+                    <a href="text.html">
+                        <h2>글제목</h2>
+                        <p>글내용</p>
+                    </a>
                 </article>
                 <article>
                     <h2>글제목</h2>
@@ -95,6 +105,17 @@
                     <p>글내용</p>
                 </article>
                 
+            </div>
+        </section>
+        <section>
+            <div class="page-select">
+                <a href=""><</a>
+                <span><a href="">1</a></span>
+                <span><a href="">2</a></span>
+                <span><a href="">3</a></span>
+                <span><a href="">4</a></span>
+                <span><a href="">5</a></span>
+                <a href="">></a>
             </div>
         </section>
     </main>

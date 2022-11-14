@@ -1,51 +1,3 @@
-@font-face {
-    font-family: 'S-CoreDream-3Light';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-* { 
-    font-family: 'S-CoreDream-3Light';
-    margin:0; 
-    padding:0; 
-}
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-html, body {
-  height: 100%;
-}
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-input, button, textarea, select {
-  font: inherit;
-}
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-ol, ul {
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-.d-none{
-    display: none;
-}
-.textShadowEffect{
-    text-shadow: 2px 2px 4px #0005;
-}
-.boxShadowEffect{
-    box-shadow: 2px 2px 4px #0005;
-}
-
 
 /* ==================header=================== */
 header{
@@ -80,11 +32,13 @@ section a{
     display: flex;
     justify-content: space-between;
     margin: 4em;
+
 }
 .main-title{
     font-size: 3em;
 }
 .box-search{
+    width: 300px;
 }
 .btn-search{
     width: 4em;
@@ -94,6 +48,9 @@ section a{
     background-color: #FFA500;
     border-color: #FFA500;
 }
+.write{
+    margin-left: 200px;
+}
 
 
 .notice-section{
@@ -102,7 +59,7 @@ section a{
     display: flex;
     justify-content: space-between;
     
-    padding-top: 5em;
+    padding-top: 2em;
 }
 .article-row-div{
     display: flex;
@@ -121,4 +78,8 @@ section a{
 }
 .notice-section div article:last-child{
     margin-right: 3em;
+}
+.page-select{
+    text-align: center;
+    padding-top: 50px;
 }

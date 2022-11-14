@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { 
+    font-family: 'S-CoreDream-3Light';
+    margin:0; 
+    padding:0; 
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+ol, ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.d-none{
+    display: none;
+}
+.textShadowEffect{
+    text-shadow: 2px 2px 4px #0005;
+}
+.boxShadowEffect{
+    box-shadow: 2px 2px 4px #0005;
+}
+
+
+.first-section{
+    height: 55em;
+    background: url(../images/giphy.gif) no-repeat center/cover;
+}
+.second-section{
+    height: 58em;
+    background: url(../images/alert.gif) no-repeat center/cover;
+
+}
+
+/* ==================header=================== */
+header{
+    border-bottom: 1px solid #FFA500;
+}
+header section{   
+    display: flex;
+    justify-content: space-between;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+}
+ul li{
+    padding: 1em;
+}
+.logo{
+    padding: 1em;
+}
+.img-logo{
+    width: 5em;
+}
+section a{
+    color: #0008;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/* ==================main================= */
+.first-text{
+    font-size: 2em;
+    padding: 2em;
+}
+.second-text{
+    font-size: 2em;
+    padding-top: 10em;
+    padding-left: 5em;
+
+}
+.text-impact{
+    font-style: italic;
+    color: #FFA500;
+}
+.trip-start{
+    margin-top: 1em;
+}
+.btn-trip-start{
+    width: 5em;
+    height: 2em;
+    border: 1px solid black;
+    border-radius: 0px 10px;
+    background-color: #FFA500;
+    border-color: #FFA500;
+
+}
+.btn-trip-start a{
+    color: #fff;
+    
+}
+

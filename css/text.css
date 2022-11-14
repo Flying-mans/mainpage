@@ -1,0 +1,30 @@
+/* ==================header=================== */
+header{
+    border-bottom: 1px solid #FFA500;
+}
+header section{   
+    display: flex;
+    justify-content: space-between;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+}
+.content-box ul li{
+    padding: 1em;
+}
+.logo{
+    padding: 1em;
+}
+.img-logo{
+    width: 5em;
+}
+section a{
+    color: #0008;
+    font-weight: bold;
+}
+
+
+
+/* =======================main========================= */
+

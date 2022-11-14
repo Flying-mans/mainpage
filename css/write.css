@@ -1,0 +1,62 @@
+/* ==================header=================== */
+header{
+    border-bottom: 1px solid #FFA500;
+}
+header section{   
+    display: flex;
+    justify-content: space-between;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+}
+.content-box ul li{
+    padding: 1em;
+}
+.logo{
+    padding: 1em;
+}
+.img-logo{
+    width: 5em;
+}
+section a{
+    color: #0008;
+    font-weight: bold;
+}
+
+
+
+/* =======================main========================= */
+main{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.write-title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+.write-title button{
+    width: 80px;
+}
+.write-top{
+    margin-top: 50px;
+}
+.write-top div{
+    display: flex;
+    justify-content: space-between;
+}
+.write-top div input:first-child{
+    width: 40%;
+}
+.write-top div input{
+    height: 50px;
+}
+.write-bottom{
+    margin-top: 50px;
+}
+.write-bottom input{
+    width: 100%;
+    height: 500px;
+}
