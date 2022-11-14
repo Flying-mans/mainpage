@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        -헤더섹션입니다-
+        <div>
+            jeju img
+        </div>
+        <div>
+            공지사항
+        </div> 
+        <!-- 클릭 : 운영자, 회원, 비회원 -->
+        <div>
+            자유게시판
+        </div> 
+        <!-- 클릭 : 운영자, 회원, 비회원 -->
+        <div>
+            검색결과
+        </div> 
+        <!-- 클릭 : 운영자, 회원, 비회원 -->
+        <section>
+            <div>
+                로그인
+            </div> 
+            <!-- 클릭 : 비회원 -->
+            <div>
+                로그아웃
+            </div> 
+            <!-- 클릭 : 회원,운영자 -->
+        </section>
+        <section>
+            <div>
+                회원가입
+            </div> 
+            <!-- 클릭 : 비회원 -->
+            <div>
+                마이페이지
+            </div> 
+            <!-- 클릭 : 회원,운영자 -->
+        </section>
+    </header>
+    <section class="ticket">
+        -선택섹션입니다-
+        <div class="ticket-option">
+            <div>
+                편도 / 왕복 선택
+            </div>
+            <div>
+                좌석 등급 선택 (이코노미 / 비지니스)
+            </div>
+        </div>
+        <div>
+            <form class="ticket-info">
+                <div>
+                    <label for="departure">출발지:</label>
+                    <select name="departure" id="departure">
+                        <option value="김포">김포</option>
+                        <option value="제주">제주</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="arrival">도착지:</label>
+                    <select name="arrival" id="arrival">
+                        <option value="김포">김포</option>
+                        <option value="제주">제주</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="arrival">출발일자:</label>
+                    <input type="date">
+                </div>
+                <div>
+                    <label for="arrival">도착일자:</label>
+                    <input type="date">
+                </div>
+                <input class="submit-btn" type="submit" value="조회">
+                <!-- <button>조회</button> -->
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,189 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+.jejugothic * { 
+ font-family: 'Jeju Gothic', sans-serif;
+}
+
+body{
+    margin: 0px;
+    height:100vh;
+    /* background-color: aqua; */
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Jeju Gothic';
+}
+
+main{
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+    height: 100%;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.top-nav{
+    height: 3rem;
+    /* background-color: skyblue; */
+    display:flex;
+    flex-direction: row;
+    max-width:85rem;
+    margin: 0 auto;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-content: center;
+    height:100%;
+    width:fit-content;
+    /* background-color: aqua; */
+    flex-basis: 8rem;
+    flex-grow:2;
+    flex-shrink: 1;
+}
+
+.logo > a{
+    display: flex;
+}
+
+.logo > a > img{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 80%;
+    text-align: center;
+    /* display: block; */
+}
+
+
+
+.searching-image{
+    background-image: url(/images/searching-image.gif);
+    background-repeat: no-repeat;
+    background-size:contain;
+    height:93vh;
+}
+
+
+.left-nav-menu{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 13rem;
+    justify-items: left;
+    flex-grow:100;
+}
+
+.left-nav-menu div{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-size: 1.3rem;
+    flex-grow:0.05;
+}
+
+.left-nav-menu div:not(:first-child), .right-nav-menu div:not(:first-child){
+    border-left: 1px solid grey;
+}
+
+
+.left-nav-menu div > a{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+.right-nav-menu{
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    flex-basis: 10rem;
+    justify-content: right;
+}
+    .right-nav-menu div{
+        display: flex;
+        flex-basis:content;
+        font-size: 1.3rem;
+        flex-grow:0.05;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .right-nav-menu a{
+        font-size: 1.0rem;
+        color: grey;
+    }
+
+.main-index section{
+    width: 85em;
+    margin:0 auto;
+}
+
+
+.main-description{
+    /* margin-top: 100px; */
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.main-description div{
+    margin-top: 30px;
+}
+
+.main-description div:nth-child(2){
+    color:darkorange;
+    font-size: 4rem;
+}
+
+.container{
+    width:85rem;
+    margin: 0 auto;
+    height: 100%;
+    /* overflow-y: hidden; */
+}
+
+.main-index{
+    height:100vh;
+    scroll-snap-align: start;
+}
+
+.main-index article{
+    position: relative;
+    background-color: aliceblue;
+    width: 20rem;
+    height:15rem;
+    top:100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+.main-index article h2{
+    margin-bottom: 40px;
+}
+
+.main-index:nth-child(1){
+    /* background-color: aquamarine; */
+}
+    
+.main-index:nth-child(2){
+    background-color: rgb(146, 127, 255);
+}
+
+.main-index:nth-child(3){
+    background-color: rgb(87, 214, 23);
+}
+
+.main-index:nth-child(4){
+    background-color: rgb(225, 112, 13);
+}
