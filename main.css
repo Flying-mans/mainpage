@@ -1,0 +1,30 @@
+.test-box{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+
+}
+.test-box .header{
+    background-color: greenyellow;
+    height: 50px;
+}
+.test-box .body{
+    height: 300px;    
+    /* flex-direction: row; */
+    background-color: black;
+    flex-grow: 1;
+    display: flex;
+}
+    .test-box .aside{
+        background-color: skyblue;
+        width: 250px;
+        flex-shrink: 0;
+    }
+    .test-box .main{
+        background-color: orange;
+        flex-grow: 1;
+    }
+.test-box .footer{
+    background-color: gray;
+    height: 50px;
+}
