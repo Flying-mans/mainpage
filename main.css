@@ -7,13 +7,15 @@ button {
     background-color: transparent;
 
 }
+.top {
+    /* background-color: rgb(84, 125, 188);     */
+}
 .inner {
     display: flex;
     margin: 0 auto;
-    max-width: 1090px;
-    height: 50px;
+    max-width: 95%;
+    height: 58px;
     align-items: center;
-    background-color: orange;
 }
 .inner a {
     /* margin-left: 15px; */
@@ -27,23 +29,39 @@ button {
     /* flex-basis: 10px; */
 }
 .inner .community {
-    flex-basis: 300px;
+    flex-basis: 150px;
+    text-decoration-line: none;
+    font-size: x-large;
+    font-weight: bold;
+    color: orange;
 
     /* height: 300px;     */
     /* flex-direction: row; */
     /* flex-grow: 1; */
     /* display: flex; */
-    /* margin-right: 700px; */
     /* background-color: black; */
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid black;
 }
 .inner .gnb-jejuro {
-    flex-basis: 300px;
-
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 200px;
     margin-left: auto;
-    /* background-color: skyblue; */
-
+    max-height: 50px;
+}
+.gnb-jejuro * a {
+    text-decoration-line: none;
+    font-size: large;
+    color: orange;
+}
+.gnb-btn-login {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+.gnb-btn-signin {
 }
 .back-img {
     /* 배경 이미지 */
@@ -54,6 +72,9 @@ button {
     height: 100vh;
     position: absolute;
     left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
     z-index: -1;
 }
 main {
@@ -69,20 +90,23 @@ main {
     margin: 0 auto;
     position: relative;
     top: 320px;
-    /* width: 1090px; */
+    max-width: 1400px;
+    height: 300px;
     flex-direction: column;
+    justify-content: center;
     flex-basis: 1090px;
     /* background-color: red; */
 }
 
-/* 토글 */
+/* 토글 =============================================================*/
 .toggle {
     display: flex;
     padding: 0px 30px;
     height: 80px;
     align-items: center;
-    width: calc(100% - 60px) ;
-    /* 1030px; */
+    /* width: calc(100% - 60px) ; */
+    margin-left: 30px;
+    /* margin-bottom: 15px; */
     /* border-bottom: 1px solid #cfcfcf; */
     /* z-index: -1; */
     /* margin-top: 20px; */
@@ -157,13 +181,14 @@ main {
 #custom_input:disabled + label.toggle_btn_label {
     display: none;
 }
-/* 토글=================================== */
+/* 토글======================================================== */
 
 .search-box .tabpanel {
     display: flex;
-    /* margin: 20px 30px; */
-    /* margin-left: 30px; */
+    margin: 20px 30px;
+    margin-top: 0px;
     padding: 20px 30px;
+    padding-top: 40px;
     align-items: center;
     border-top: 1px solid #cfcfcf;
 
@@ -176,18 +201,24 @@ main {
     flex-basis: 300px;
     /* align-items: center; */
 }
+.routes * b, i {
+    letter-spacing: 5px;
+    font-style: inherit;
+}
 .routes .departure-route {
     display: flex;
     flex-direction: column;
-    margin-right: 15px;
     font-size: 35px;
     font-weight: 500;
     background-color: transparent;
 }
 .routes .swap {
-    width: 30px;
-    height: 27px;
+    width: 50px;
+    height: 50px;
     margin: auto;
+    background-color: #fff;
+    border: 2px solid hsla(0,0%,80%,.3);
+
     /* position: absolute;
     top: 30px;
     left: 0;
@@ -209,6 +240,10 @@ main {
     border-radius: 6px;
     flex-basis: 300px;
 }
+.options > button{
+    font-weight: bold;
+    font-size: large;
+}
 .options .select-depart-day {
     text-align: inherit;
     width: 100px;
@@ -220,6 +255,7 @@ main {
     border-bottom-left-radius: inherit;
     flex-grow: 1;
     flex-basis: 0;
+    margin-right: 15px;
 }
 .options .select-arrive-day {
     text-align: inherit;
@@ -241,4 +277,6 @@ main {
     border: 2px solid hsla(0,0%,80%,.3);
     flex-basis: 100px;
     margin-right: 50px;
+}
+.search-txt {
 }
