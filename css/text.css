@@ -27,4 +27,40 @@ section a{
 
 
 /* =======================main========================= */
-
+main{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.text-top{
+    float: right;
+}
+.text-main{
+    padding-top: 50px;
+}
+.text-main-title{
+    font-size: 24px;
+    border-top: 1px solid #FFA500;
+}
+.text-main-top{
+    display: flex;
+    justify-content: space-between;
+}
+.text-main-top div div{
+    display: flex;
+    justify-content: space-between;
+}
+.text-main-content{
+    margin-top: 20px;
+    height: 25rem;
+    border: 1px solid #FFA500;
+}
+.text-main-bottom{
+    margin-top: 20px;
+}
+.comment{
+    margin-top: 10px;
+    padding: 10px;
+    height: 10rem;
+    border: 1px solid #FFA500;
+}

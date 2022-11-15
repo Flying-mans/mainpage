@@ -12,13 +12,13 @@ header ul{
     justify-content: space-between;
 }
 ul li{
-    padding: 1em;
+    padding: 16px;
 }
 .logo{
-    padding: 1em;
+    padding: 16px;
 }
 .img-logo{
-    width: 5em;
+    width: 80px;
 }
 section a{
     color: #0008;
@@ -28,21 +28,28 @@ section a{
 
 
 /* =======================main========================= */
+main{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
 .main-section{
+}
+.main-section div{
     display: flex;
     justify-content: space-between;
-    margin: 4em;
-
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .main-title{
-    font-size: 3em;
+    font-size: 48px;
 }
 .box-search{
     width: 300px;
 }
 .btn-search{
-    width: 4em;
-    height: 2em;
+    width: 64px;
+    height: 32px;
     border: 1px solid black;
     border-radius: 0px 10px;
     background-color: #FFA500;
@@ -59,27 +66,36 @@ section a{
     display: flex;
     justify-content: space-between;
     
-    padding-top: 2em;
+    padding-top: 32px;
 }
 .article-row-div{
     display: flex;
     justify-content: space-between;
 
 }
-.notice-section div article{
+.notice-section div a{
     border: 1px solid #FFA500;
     border-radius: 0px 10px;
     box-shadow: 2px 2px 4px #0005;
     width: 30%;
-    height: 15em;
+    height: 260px;
     
-    margin-left: 3em;
-    padding: 1em;
+    padding: 16px;
+}
+.notice-section div a:not(:first-child){
+    border: 1px solid #FFA500;
+    border-radius: 0px 10px;
+    box-shadow: 2px 2px 4px #0005;
+    width: 30%;
+    height: 260px;
+    
+    margin-left: 32px;
+    padding: 16px;
 }
 .notice-section div article:last-child{
-    margin-right: 3em;
+    margin-right: 48px;
 }
 .page-select{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
 }

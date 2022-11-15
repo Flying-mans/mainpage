@@ -11,17 +11,17 @@ header ul{
     justify-content: space-between;
 }
 .content-box ul li{
-    padding: 1em;
+    padding: 16px;
 }
 .logo{
-    padding: 1em;
-}
+    padding: 16px;
+} 
 .img-logo{
-    width: 5em;
+    width: 80px;
 }
 section a{
     color: #0008;
-    font-weight: bold;
+    font-weight: bold
 }
 
 
@@ -38,7 +38,12 @@ main{
     font-size: 24px;
 }
 .write-title button{
-    width: 80px;
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 0px 10px;
+    background-color: #FFA500;
+    border-color: #FFA500;
 }
 .write-top{
     margin-top: 50px;
@@ -49,6 +54,9 @@ main{
 }
 .write-top div input:first-child{
     width: 40%;
+}
+.write-top div input:not(:first-child){
+    width: 20%;
 }
 .write-top div input{
     height: 50px;
