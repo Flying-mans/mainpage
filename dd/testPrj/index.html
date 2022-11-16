@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/testPrj/index.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <div class="body">
+        <section class="body-section">
+            <div class="body-container">
+                <div class="body-container-1">
+                    <div class="body-logo-image">
+                        <img src="/logo-image.png" width="100" height="100"alt="로고이미지">
+                    </div>
+                    <div class="body-info-q">
+                        <ul>
+                            <li>오전 00:00 ~ 00:00</li>
+                            <li>항공사</li>
+                        </ul>
+                    </div>
+                    <div class="body-info-a">
+                        <ul>
+                            <li>1 시간</li>
+                            <li>김포 - 제주</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="body-price-alarm">
+                    <div class="h1">
+                        <h1>알림 설정</h1>
+                    </div>
+                    <div>
+                        <input class="body-price-alarm-text"type="text"style="width:250px;height:50px;font-size:30px;" >
+                        <input class="body-price-alarm-image"type="image"src="/예약 하기.png"></input>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-price">
+                <h1 class="main-price-current">60,000 원</h1>
+                <ul class="main-price-inf">
+                    <li>최저가격 : 30,940 원</li>
+                    <li>최고가격 : 40,500 원</li>
+                    <li>평균가격 : 50,400 원</li>
+                    <li>어제가격 : 45,500 원</li>
+                </ul>
+            </div>
+            
+        </section>
+
+        <section>
+            <!-- <div class="col-md-6"> -->
+                <canvas id="myChartTwo" width ="5000" height="2000"></canvas>
+            <!-- </div> -->
+        </section>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+
+    <script>
+
+        let myChartTwo = document.getElementById("myChartTwo").getContext("2d");
+
+
+
+        let barChartTwo = new Chart(myChartTwo,{
+            type : 'bar',
+            data : {
+                labels:['22-11-16','22-11-17','22-11-18','22-11-19','22-11-20','22-11-21','22-11-22','22-11-23','22-11-24','22-11-25',
+                        '22-11-26','22-11-27','22-11-28','22-11-29','22-11-30','22-12-1','22-12-2','22-12-3','22-12-4','22-12-5',
+                        '22-12-6','22-12-7','22-12-8','22-12-9','22-12-19','22-12-20','22-12-21','22-12-22','22-12-23','22-12-24',
+                        '22-12-24','22-12-25','22-12-26','22-12-27','22-12-28','22-12-29','22-12-30','22-12-31','22-1-1','22-1-2'],
+                datasets:[{
+                    label : '김포-제주도',
+                    data : [
+                        29000,10000,25000,20000,18000,29000,30000,34000,20000,19000,
+                        30000,23000,40000,34000,28000,33300,33800,32000,12300,19000,
+                        29000,10000,25000,20000,18000,29000,30000,34000,20000,19000,
+                        30000,23000,40000,34000,28000,33300,33800,32000,12300,19000
+                    ],
+                    backgroundColor:[
+                        'red',
+                        
+                    ],
+                    borderWidth : 3,
+                    borderColor : '#000',
+                    hoverBorderWidth : 2,
+                }]
+            }
+        })
+    </script>
+</body>
+</html>
