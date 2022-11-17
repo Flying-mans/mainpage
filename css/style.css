@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+   
+body, select, input, button{
+    font-family: 'IBMPlexSansKR-Regular';
+}
+
+body{
+    margin: 0px;
+    height:100vh;
+    background-color: #fbfbfd;
+    scroll-behavior: smooth;
+}
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+h3{
+    margin: 0;
+}
+
+
+.top-nav{
+    height: 3rem;
+    /* background-color: skyblue; */
+    display:flex;
+    flex-direction: row;
+    max-width:85rem;
+    margin: 0 auto;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.top-nav ul{
+    list-style-type: none;
+}
+
+.menu-selected a{
+    font-weight: bold;
+    color:black;
+}
+
+.logo{
+    display: flex;
+    align-content: center;
+    height:100%;
+    width:fit-content;
+    /* background-color: aqua; */
+    flex-basis: 8rem;
+    flex-grow:1;
+    flex-shrink: 1;
+}
+
+.logo > a{
+    display: flex;
+}
+
+.logo > a > img{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 80%;
+    text-align: center;
+    /* display: block; */
+}
+
+
+
+.searching-image{
+    background-image: url(/images/searching-image.gif);
+    background-repeat: no-repeat;
+    background-size:contain;
+    height:93vh;
+}
+
+.left-nav-menu{
+    flex-direction: row;
+    flex-basis: 13rem;
+    flex-grow:100;
+}
+
+
+.left-nav-menu ul{
+    height: fit-content;
+    display: flex;
+    justify-items: left;
+    padding-left: 0;
+}
+
+.left-nav-menu ul li{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.3rem;
+    color:grey;
+    flex-grow:0.05;
+}
+
+.left-nav-menu li:not(:first-child), .right-nav-menu li:not(:first-child){
+    border-left: 1px solid grey;
+}
+
+
+.left-nav-menu li > a{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+.right-nav-menu{
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    flex-basis: 10rem;
+    justify-content: right;
+}
+    .right-nav-menu ul{
+        display: flex;
+        flex-basis:content;
+        font-size: 1.3rem;
+        flex-grow:0.05;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .right-nav-menu li{
+        padding: 0 5px;
+    }
+
+    .right-nav-menu li a{
+        font-size: 1.0rem;
+        color: grey;
+    }
+

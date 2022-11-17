@@ -1,0 +1,154 @@
+@import url(/css/style.css);
+
+.menu-section{
+    padding: 0.1rem;
+    background-color: #fdba51;
+    height: 20rem;
+}
+
+
+
+.select-ticket-menu{
+
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6.2px);
+    padding: 2rem;
+    border-radius: 1.25rem;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1.4fr 5fr 1fr repeat(3, 5fr) 3fr;
+    gap: 1rem;
+    grid-template-areas:
+        "blank1 departure-location-text blank2 arrival-location-text departure-date-text arrival-date-text blank3"
+        "round-oneway departure-location-btn change-route arrival-location-btn departure-date-input arrival-date-input search-btn";
+}
+
+.select-ticket-menu *{
+    display: block;
+}
+
+
+.select-ticket-menu option{
+    color: black;
+}
+
+
+.select-ticket-menu select, .select-ticket-menu input{
+    transition: background-color 0.2s;
+}
+
+.select-ticket-menu *:not(h3,div,img,button):hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.select-ticket-menu select:not(.round-oneway), .select-ticket-menu input, .select-ticket-menu button{
+    height:100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+
+.select-ticket-menu select:not(.round-oneway), .arrival-date, .departure-date{
+    font-size: 1.2rem;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+
+.arrival-departure{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 0.1 1 30rem;
+}
+
+
+.arrival, .departure{
+    background-image: url(/images/airplane-icon.png);
+    background-color:white;
+    background-size:2rem;
+    background-position: 0.3rem 50%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.round-oneway{
+    grid-area:round-oneway;
+    font-size: 1rem;
+    font-weight: bold;
+    background: transparent;
+    border:none;
+    outline: none;
+    text-align: center;
+}
+
+.departure-location-txt{
+    grid-area: departure-location-text;
+    align-self: end;
+}
+
+.arrival-location-txt{
+    grid-area: arrival-location-text;
+    align-self: end;
+}
+
+.departure-date-txt{
+    grid-area: departure-date-text;
+    align-self: end;
+}
+
+.arrival-date-txt{
+    grid-area: arrival-date-text;
+    align-self: end;
+}
+
+.departure{
+    grid-area: departure-location-btn;
+}
+
+.arrival{
+    grid-area: arrival-location-btn;
+}
+
+
+
+.change-route{
+    display: flex;
+    grid-area: change-route;
+}
+
+.change-route img{
+    display: inline-block;
+    margin:auto;
+    width:40%;
+}
+
+.departure-date{
+    grid-area: departure-date-input;
+} 
+
+.arrival-date{
+    grid-area: arrival-date-input;
+}
+
+.price-search{
+
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #FF9900;
+    color:aliceblue;
+    grid-area: search-btn;
+    margin: 0 auto;
+}

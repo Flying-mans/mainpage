@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/result.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="/js/myChart-no-label.js"></script>
+</head>
+<body>
+    <section class="main-index">
+        <header class="top-nav">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="images/logo.png" alt="JEJU RO LOGO">
+                </a>
+            </div>
+            <nav class="left-nav-menu">
+                <ul>
+                    <li class="menu-selected"><a href="/search.html">가격조회</a></li>
+                    <li><a href="/board.html">자유게시판</a></li>
+                </ul>
+            </nav>
+            <nav class="right-nav-menu">
+                <ul>
+                    <li>
+                        <a href="/sign-in.html">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="/login.html">로그인</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <div class="menu-section">
+        <section class="select-ticket-menu">
+            <select class="round-oneway" name="왕복편도" id="round-oneway">
+                <option value="round">왕복</option>
+                <option value="oneway">편도</option>
+            </select>
+            <h3 class="departure-location-txt">출발지</h3>
+            <select class="departure" name="" id="">
+                <option value="GMP">김포(GMP)</option>
+                <option value="CJU">제주(CJU)</option>
+            </select>
+            <div class="change-route">
+                <img src="/images/change-route.svg" alt="">
+            </div>
+            <h3 class="arrival-location-txt">도착지</h3>
+            <select class="arrival" name="" id="">
+                <option value="round">김포(GMP)</option>
+                <option value="oneway">제주(CJU)</option>
+            </select>
+            <h3 class="departure-date-txt">출발일자</h3>
+            <input class="departure-date" type="date" name="" id="">
+            <h3 class="arrival-date-txt">도착일자</h3>
+            <input class="arrival-date" type="date" name="" id="">
+            <button class="price-search">가격조회</button>
+        </section>
+    </div>
+    <main class="item-container">
+        <section class="result-item">
+            <div></div>
+            <div>
+                <span class="time">오전 00:00 ~ 오전 01:00</span>
+                <div>
+                    <span class="airline">항공사: </span><img src="/images/korean-air-logo.png" alt=""><span airline="kal"> 대한항공 (KAL)</span>
+                </div>
+            </div>
+            <div>
+                <span class="duration">1 시간</span>
+                <span class="route">김포 - 제주</span>
+            </div>
+            <div>
+                <canvas id="myChart1"></canvas>
+            </div>
+            <div class="price"><span>59,470 원</span></div>
+            <div></div>
+        </section>
+        <section class="result-item">
+            <div></div>
+            <div>
+                <span class="time">오전 02:00 ~ 오전 03:00</span>
+                <div>
+                    <span class="airline">항공사: </span><img src="/images/korean-air-logo.png" alt=""><span airline="kal"> 대한항공 (KAL)</span>
+                </div>
+            </div>
+            <div>
+                <span class="duration">1 시간</span>
+                <span class="route">김포 - 제주</span>
+            </div>
+            <div>
+                <canvas id="myChart2"></canvas>
+            </div>
+            <div class="price"><span>49,470 원</span></div>
+            <div></div>
+        </section>
+        <section class="result-item">
+            <div></div>
+            <div>
+                <span class="time">오전 04:00 ~ 오전 05:00</span>
+                <div>
+                    <span class="airline">항공사: </span><img src="/images/jeju-air-logo.png" alt=""><span airline="kal"> 제주항공 (JJA)</span>
+                </div>
+            </div>
+            <div>
+                <span class="duration">1 시간</span>
+                <span class="route">김포 - 제주</span>
+            </div>
+            <div>
+                <canvas id="myChart3"></canvas>
+            </div>
+            <div class="price"><span>42,470 원</span></div>
+            <div></div>
+        </section>
+        <section class="result-item">
+            <div></div>
+            <div>
+                <span class="time">오후 13:00 ~ 오후 14:00</span>
+                <div>
+                    <span class="airline">항공사: </span><img src="/images/air-seoul-logo.png" alt=""><span airline="kal"> 에어서울 (RS)</span>
+                </div>
+            </div>
+            <div>
+                <span class="duration">1 시간</span>
+                <span class="route">김포 - 제주</span>
+            </div>
+            <div>
+                <canvas id="myChart4"></canvas>
+            </div>
+            <div class="price"><span>43,470 원</span></div>
+            <div></div>
+        </section>
+    </main>
+</body>
+</html>

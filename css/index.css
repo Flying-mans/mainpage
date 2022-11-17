@@ -1,0 +1,75 @@
+@import url(/css/style.css);
+
+
+main{
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100%;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+.main-index section{
+    width: 85em;
+    margin:0 auto;
+}
+
+
+.main-description{
+    /* margin-top: 100px; */
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.main-description div{
+    margin-top: 30px;
+}
+
+.main-description div:nth-child(2){
+    color:darkorange;
+    font-size: 4rem;
+}
+
+.container{
+    width:85rem;
+    margin: 0 auto;
+    height: 100%;
+    /* overflow-y: hidden; */
+}
+
+.main-index{
+    height:100vh;
+    scroll-snap-align: start;
+}
+
+.main-index article{
+    position: relative;
+    background-color: aliceblue;
+    width: 20rem;
+    height:15rem;
+    top:100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+.main-index article h2{
+    margin-bottom: 40px;
+}
+
+.main-index:nth-child(1){
+    /* background-color: aquamarine; */
+}
+    
+.main-index:nth-child(2){
+    background-color: rgb(146, 127, 255);
+}
+
+.main-index:nth-child(3){
+    background-color: rgb(87, 214, 23);
+}
+
+.main-index:nth-child(4){
+    background-color: rgb(225, 112, 13);
+}

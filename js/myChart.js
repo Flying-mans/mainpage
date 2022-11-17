@@ -1,4 +1,6 @@
-const ctx = document.getElementById('myChart').getContext('2d');
+window.onload = () => {
+    const canvas = document.getElementById('myChart');
+    const ctx = canvas.getContext('2d');
         let dataLabels = [];
         let data = [];
         let data2 = [];
@@ -85,3 +87,4 @@ const ctx = document.getElementById('myChart').getContext('2d');
         });
 
         let smooth = false;
+    }
