@@ -7,12 +7,12 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <!-- <script src='main.js'></script> -->
+    <script src='main.js'></script>
 </head>
 
 <body>
     <header>
-        <nav class="top">
+        <nav>
             <div class="inner">
                 <a href="" class="logo">
                     <img src="img/main_logo.png" alt="제주로 로고" class="jejuro-logo">
@@ -20,14 +20,16 @@
                 <a href="" class="community">
                     여행 게시판
                 </a>
-                <ul class="gnb-jejuro">
-                    <li style="display: inline-block;"  class="gnb-btn-login">
-                        <a href="">로그인</a>
-                    </li
-                    ><li style="display: inline-block;"  class="gnb-btn-signin">
-                        <a href="">회원가입</a>
-                    </li>
-                </ul>
+                <div class="gnb-jejuro">
+                    <ul>
+                        <li style="display: inline-block;">
+                            <a href="" class="gnb-btn-login">로그인</a>
+                        </li
+                        ><li style="display: inline-block;">
+                            <a href="" class="gnb-btn-signin">회원가입</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -45,7 +47,7 @@
                     <b class="select-departure-code">GMP</b
                     ><i class="select-departure-name">김포</i>
                 </button
-                ><button class="swap" type="button" title="출도착 전환">
+                ><button class="swap" type="button" title="출도착 전환" onclick="swapRoute()">
                     <b class="swap-depart-arrival">TO</b>
                 </button
                 ><button class="arrival-route" type="button">
@@ -54,8 +56,8 @@
                 </button>
             </div>
             <div class="options">
-                <button class="select-depart-day" type="button">가는 날</button
-                ><button class="select-arrive-day" type="button">오는 날</button>
+                <input class="select-depart-day" type="date" data-placeholder="가는 날"></input
+                ><input class="select-arrive-day" type="date">오는 날</input>
             </div>
             <button class="search" type="submit">
                 <span class="search-txt">항공권 검색</span>

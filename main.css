@@ -7,6 +7,24 @@ button {
     background-color: transparent;
 
 }
+.select-depart-day:before {
+    content: "출발날";
+    width: 100%;
+}
+/* .options::before{
+    content: "출발날";
+    width: 100%;
+} */
+input[type='date']::before {
+    content: attr(data-placeholder);
+    width: 100%;
+  }
+  
+input[type='date']:focus::before,
+input[type='date']:valid::before {
+display: none;
+}
+
 .top {
     /* background-color: rgb(84, 125, 188);     */
 }
@@ -91,10 +109,12 @@ main {
     position: relative;
     top: 320px;
     max-width: 1400px;
-    height: 300px;
+    max-height: 400px;
     flex-direction: column;
     justify-content: center;
     flex-basis: 1090px;
+    /* flex-wrap: wrap; */
+
     /* background-color: red; */
 }
 
@@ -191,6 +211,7 @@ main {
     padding-top: 40px;
     align-items: center;
     border-top: 1px solid #cfcfcf;
+    flex-wrap: wrap;
 
 }
 .tabpanel .routes {
@@ -202,8 +223,8 @@ main {
     /* align-items: center; */
 }
 .routes * b, i {
-    letter-spacing: 5px;
     font-style: inherit;
+    text-align: justify;
 }
 .routes .departure-route {
     display: flex;
@@ -224,12 +245,17 @@ main {
     left: 0;
     right: 0; */
 }
-.routes .arrival-route {
+.arrival-route > b {
+    letter-spacing: 3px;
+
+}
+.routes button:not(.swap) {
     display: flex;
     flex-direction: column;
     font-size: 35px;
     font-weight: 500;
     background-color: transparent;
+    flex: 0 0 100px;
 }
 .tabpanel .options {
     display: flex;
