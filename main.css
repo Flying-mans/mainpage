@@ -214,6 +214,10 @@ main {
     flex-wrap: wrap;
 
 }
+.descrpition {
+    display: flex;
+    
+}
 .tabpanel .routes {
     display: flex;
     flex-direction: row;
